@@ -25,8 +25,6 @@ git push
 git branch -M main
 git push -u origin main -->
 
--->
-
 ```bash
 # install the Netlify CLI globally
 npm install -g netlify-cli
