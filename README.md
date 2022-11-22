@@ -15,38 +15,29 @@ npm run dev
 
 # Build for prod and export static website
 npm run build
+
+git add .
+git commit -m "comment"
+git push
 ```
-
-`npm install gh-pages`
-
-In package.json, add:
-
-"homepage": "https://aaron-san.github.io/<repository>"
-"name": ...
-
-"scripts": {
-"predeploy": "npm run build",
-"deploy": "gh-pages -d build",
-}
-
-git checkout --orphan gh-pages
-git reset
-git commit --allow-empty -m "Initial commit"
-git push --set-upstream origin gh-pages
-
----
-
-`git add .`
-`git commit -m "deploy website"`
-`git push`
-
-`npm run deploy`
 
 <!-- git remote add origin https://github.com/aaron-san/fincoder-blog.git
 git branch -M main
 git push -u origin main -->
 
-npm run build
-git add dist -f
-git commit -m "adding dist"
-git subtree push --prefix dist origin gh-pages
+-->
+
+```bash
+# install the Netlify CLI globally
+npm install -g netlify-cli
+
+# log into your Netlify account
+ntl login
+
+# move into the site's root directory
+cd ~/path/to/your/nextjs-site/
+
+# create a new Netlify site
+Do through Netlify site
+<!-- ntl init -->
+```

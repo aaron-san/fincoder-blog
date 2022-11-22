@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
 }
 
 p {
@@ -26,19 +27,42 @@ img {
 }
 
 header {
-  background: steelblue;
-  color: #fff;
+  position: fixed;
+  /* display: absolute; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  /* background: rgb(83, 180, 70); */
+  color: #666;
   padding: 5px;
-  margin-bottom: 40px;
+  height: 50px;
+  /* margin-bottom: 40px; */
+  line-height: 45px;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(50, 50, 50, .5);
+  /* border-bottom: 14px solid orange; */
 }
 
 header a {
-  color: #fff;
+  /* position: absolute; */
+  color: #666;
 }
 
+#logo {
+  cursor: pointer;
+  width: fit-content;
+}
+
+#logo:hover {
+  color: lightslategray;
+}
+
+
 .container {
+  /* position: relative; */
   max-width: 768px;
-  margin: auto;
+  margin: auto; 
   overflow: auto;
   padding: 0 10px;
 }
@@ -116,4 +140,8 @@ ol {
   .posts {
     grid-template-columns: 1fr;
   }
+}
+
+ul, ol {
+  padding-left: 20px;
 }
