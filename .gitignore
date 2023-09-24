@@ -43,3 +43,7 @@ yarn-error.log\*
 
 # Local Netlify folder
 .netlify
+
+
+# Files to harvest
+free-analyst-notes (harvest)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GIPS on Free Analyst Notes</title>
+    <link>/categories/gips/</link>
+    <description>Recent content in GIPS on Free Analyst Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/gips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CFA-Level-1-GIPS</title>
+      <link>/post/cfa-level-1-gips/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-gips/</guid>
+      <description>Global Investment Performance Standards (GIPS®)OverviewKey CharacteristicsRequirements of GIPS®Compliance StatementMajor Sections of GIPS®Compliance with GIPSGlobal Investment Performance Standards (GIPS®)OverviewGIPS® apply to investment management firms in order to benefit their current and prospective clientsFIRMS MUST be defined as an investment firm, subsidiary, or division held out to clients or PROSPECTIVE CLIENTS as a DISTINCT BUSINESS ENTITY.</description>
+    </item>
+    
+  </channel>
+</rss>

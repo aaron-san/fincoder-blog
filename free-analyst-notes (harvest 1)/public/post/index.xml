@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Free Analyst Notes</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Free Analyst Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Sep 2021 21:47:27 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CFA Level 2: Alternative Investments (part 1)</title>
+      <link>/post/cfa-level-2-alternative-investments-part-1/</link>
+      <pubDate>Thu, 02 Sep 2021 21:47:27 +0000</pubDate>
+      
+      <guid>/post/cfa-level-2-alternative-investments-part-1/</guid>
+      <description>Alternative investments cover real estate, commodities, hedge funds, private equity, and more. Each of these has its own unique risk and reward features.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 1: Quantitative Methods (part 2)</title>
+      <link>/post/cfa-level-1-quantitative-methods-part-2/</link>
+      <pubDate>Thu, 02 Sep 2021 21:47:07 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-quantitative-methods-part-2/</guid>
+      <description>Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 1: Quantitative Methods (part 1)</title>
+      <link>/post/cfa-level-1-quantitative-methods-part-1/</link>
+      <pubDate>Thu, 02 Sep 2021 21:47:01 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-quantitative-methods-part-1/</guid>
+      <description>Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 2: Fixed Income (part 1)</title>
+      <link>/post/cfa-level-2-fixed-income-part-1/</link>
+      <pubDate>Thu, 02 Sep 2021 21:46:18 +0000</pubDate>
+      
+      <guid>/post/cfa-level-2-fixed-income-part-1/</guid>
+      <description>Fixed income covers the topic of bonds and other coupon-like investment securities.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 1: Alternative Investments (part 1)</title>
+      <link>/post/cfa-level-1-alternative-investments-part-1/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-alternative-investments-part-1/</guid>
+      <description>Alternative investments is a growing field full of potential profit opportunities. Learn about the basics here.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 1: Economics (part 1)</title>
+      <link>/post/cfa-level-1-economics-part-1/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-economics-part-1/</guid>
+      <description>The CFA level 1 exam covers economics in great detail, specifically, macroeconomics. It covers demand and supply, market structures, and more.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 1: Equities</title>
+      <link>/post/cfa-level-1-equities/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-equities/</guid>
+      <description>The CFA Level 1 exam covers the topic of Equities which includes market orders, indexes, market structure, and more.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 1: Ethical and Professional Standards (part 1)</title>
+      <link>/post/cfa-level-1-ethical-and-professional-standards-part-1/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-ethical-and-professional-standards-part-1/</guid>
+      <description>Ethics is a commonly failed topic in the CFA exams. It can be quite tricky, so it is critical to thoroughly understand the topic. We hope our notes help you grasp the main points.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 1: Ethical and Professional Standards (part 2)</title>
+      <link>/post/cfa-level-1-ethical-and-professional-standards-part-2/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-ethical-and-professional-standards-part-2/</guid>
+      <description>Professional Standards (cont)Professional Standards (cont)Duties to ClientsLoyalty, Prudence, and CareHave a duty of loyalty, act with reasonable care, and exercise prudent judgment
+Must act for the clients’ interests and place their interests before their employer’s and own self-interest
+Make investment decisions in the context of the entire portfolio
+Allowed to make preparations for future employment while still employed, as long as it doesn’t affect loyalty to current employer</description>
+    </item>
+    
+    <item>
+      <title>CFA-Level-1-GIPS</title>
+      <link>/post/cfa-level-1-gips/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-gips/</guid>
+      <description>Global Investment Performance Standards (GIPS®)OverviewKey CharacteristicsRequirements of GIPS®Compliance StatementMajor Sections of GIPS®Compliance with GIPSGlobal Investment Performance Standards (GIPS®)OverviewGIPS® apply to investment management firms in order to benefit their current and prospective clientsFIRMS MUST be defined as an investment firm, subsidiary, or division held out to clients or PROSPECTIVE CLIENTS as a DISTINCT BUSINESS ENTITY.</description>
+    </item>
+    
+    <item>
+      <title>Basic HTML Elements</title>
+      <link>/post/basic-elements/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/basic-elements/</guid>
+      <description>The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.
+Headings Let&amp;rsquo;s start with all possible headings. The HTML &amp;lt;h1&amp;gt;—&amp;lt;h6&amp;gt; elements represent six levels of section headings. &amp;lt;h1&amp;gt; is the highest section level and &amp;lt;h6&amp;gt; is the lowest.
+Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6  Paragraph According to the HTML5 specification by W3C, HTML documents consist of a tree of elements and text.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>/post/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>/post/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/goisforlovers/</guid>
+      <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; &lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In our experience that it is just the right amount of
+logic to be able to create a good static website. If you have used other
+template systems from different languages or frameworks you will find a lot of
+similarities in Go templates.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>/post/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
+▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 1: Quantitative Methods (part 3)</title>
+      <link>/post/cfa-level-1-quantitative-methods-part-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-quantitative-methods-part-3/</guid>
+      <description>Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more.</description>
+    </item>
+    
+    <item>
+      <title>CFA Study Topics</title>
+      <link>/post/cfa-study-topics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-study-topics/</guid>
+      <description>CFA Level 1Ethical and Professional StandardsGIPSEquitiesEconomics Quantitative MethodsDerivatives Corporate FinancePortfolio Management
+CFA Level 2Alternative Investments
+CFA Level 3Alternative Investments
+</description>
+    </item>
+    
+    <item>
+      <title>Cfa-Level-1-Quantitative-Methods-Part-4</title>
+      <link>/post/cfa-level-1-quantitative-methods-part-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cfa-level-1-quantitative-methods-part-4/</guid>
+      <description>Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more.</description>
+    </item>
+    
+  </channel>
+</rss>

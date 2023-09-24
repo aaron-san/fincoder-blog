@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Free Analyst Notes</title>
+    <link>/categories/development/</link>
+    <description>Recent content in Development on Free Analyst Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic HTML Elements</title>
+      <link>/post/basic-elements/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/basic-elements/</guid>
+      <description>The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.
+Headings Let&amp;rsquo;s start with all possible headings. The HTML &amp;lt;h1&amp;gt;—&amp;lt;h6&amp;gt; elements represent six levels of section headings. &amp;lt;h1&amp;gt; is the highest section level and &amp;lt;h6&amp;gt; is the lowest.
+Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6  Paragraph According to the HTML5 specification by W3C, HTML documents consist of a tree of elements and text.</description>
+    </item>
+    
+  </channel>
+</rss>

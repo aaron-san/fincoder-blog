@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CFA Level 2 on Free Analyst Notes</title>
+    <link>/categories/cfa-level-2/</link>
+    <description>Recent content in CFA Level 2 on Free Analyst Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Sep 2021 21:47:27 +0000</lastBuildDate><atom:link href="/categories/cfa-level-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CFA Level 2: Alternative Investments (part 1)</title>
+      <link>/post/cfa-level-2-alternative-investments-part-1/</link>
+      <pubDate>Thu, 02 Sep 2021 21:47:27 +0000</pubDate>
+      
+      <guid>/post/cfa-level-2-alternative-investments-part-1/</guid>
+      <description>Alternative investments cover real estate, commodities, hedge funds, private equity, and more. Each of these has its own unique risk and reward features.</description>
+    </item>
+    
+    <item>
+      <title>CFA Level 2: Fixed Income (part 1)</title>
+      <link>/post/cfa-level-2-fixed-income-part-1/</link>
+      <pubDate>Thu, 02 Sep 2021 21:46:18 +0000</pubDate>
+      
+      <guid>/post/cfa-level-2-fixed-income-part-1/</guid>
+      <description>Fixed income covers the topic of bonds and other coupon-like investment securities.</description>
+    </item>
+    
+  </channel>
+</rss>

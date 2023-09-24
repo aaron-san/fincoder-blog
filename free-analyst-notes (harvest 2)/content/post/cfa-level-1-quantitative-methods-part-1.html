@@ -1,0 +1,191 @@
+---
+title: "CFA Level 1: Quantitative Methods (part 1)"
+slug: cfa-level-1-quantitative-methods-part-1
+description: ""
+lastmod: "2021-09-02 21:47:01"
+categories:
+- CFA Level 1
+tags:
+- Quantitative Methods
+output:
+      blogdown::html_page:
+            toc: true
+summary: "Quantitative methods covers statistical topics including descriptive statistics, hypothesis testing, and more."
+thumbnail: "/post/cfa-level-1-quantitative-methods-part-1_files/cube.jpg"
+---
+
+<script src="//rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#data-types">Data Types</a></li>
+<li><a href="#descriptive-statistics">Descriptive Statistics</a></li>
+<li><a href="#inferential-statistics">Inferential Statistics</a></li>
+<li><a href="#distributions">Distributions</a>
+<ul>
+<li><a href="#leptokurtic-distribution">Leptokurtic Distribution</a></li>
+<li><a href="#platykurtic-distribution">Platykurtic Distribution</a></li>
+</ul></li>
+<li><a href="#returns">Returns</a>
+<ul>
+<li><a href="#arithmetic-mean-vs.-geometric-mean">Arithmetic Mean vs. Geometric Mean</a></li>
+<li><a href="#money-weighted-return">Money-Weighted Return</a></li>
+<li><a href="#time-weighted-return">Time-weighted return</a></li>
+</ul></li>
+<li><a href="#money-market">Money Market</a>
+<ul>
+<li><a href="#bank-discount-yield">Bank-Discount Yield</a></li>
+<li><a href="#holding-period-return">Holding Period Return</a></li>
+<li><a href="#effective-annual-yield">Effective Annual Yield</a></li>
+<li><a href="#money-market-yield-cd-equivalent-yield">Money-Market Yield (CD equivalent yield)</a></li>
+<li><a href="#bond-equivalent-yield">Bond-Equivalent Yield</a></li>
+<li><a href="#time-weighted-rate-of-return">Time-Weighted Rate of Return</a></li>
+</ul></li>
+<li><a href="#position-of-a-percentile">Position of a Percentile</a></li>
+</ul>
+</div>
+
+<div id="data-types" class="section level2">
+<h2>Data Types</h2>
+<ul>
+<li>Nominal - categorize, but do not rank<br />
+</li>
+<li>Ordinal - categorize and rank<br />
+</li>
+<li>Interval - difference between scale values equal<br />
+</li>
+<li>Ratio - abolute zero</li>
+</ul>
+<p><em>“N-O-I-R” (French for “black”)</em></p>
+</div>
+<div id="descriptive-statistics" class="section level2">
+<h2>Descriptive Statistics</h2>
+<ul>
+<li>Involves describing data based on particular metrics</li>
+</ul>
+</div>
+<div id="inferential-statistics" class="section level2">
+<h2>Inferential Statistics</h2>
+<ul>
+<li>Involves making inferences about populations based on samples</li>
+<li>Statistical Inference (forecasts, estimates.)</li>
+<li>Estimation</li>
+<li>Hypothesis Testing</li>
+</ul>
+</div>
+<div id="distributions" class="section level2">
+<h2>Distributions</h2>
+<p>
+<img src="/post/cfa-level-1-quantitative-methods_files/normal-platy-lepto.png" title="fig:" style="margin: 5px 5px 5px 5px; border-radius: 1%; box-shadow: 0 3px 6px 0 grey, 0 4px 16px 0 grey; float: right;" width="350" alt="Normal curve with excess kurtosis" />
+</p>
+<div id="leptokurtic-distribution" class="section level3">
+<h3>Leptokurtic Distribution</h3>
+<ul>
+<li>More peaked, fatter tails (pinch the normal distribution)</li>
+<li>More peaked than normal distribution (excess Kurtosis &gt; 0)</li>
+</ul>
+</div>
+<div id="platykurtic-distribution" class="section level3">
+<h3>Platykurtic Distribution</h3>
+<ul>
+<li>Less peaked, compressed tails (press down on normal distribution)</li>
+<li>Less peaked than normal distribution (excess Kurtosis &lt; 0) * Smaller tails</li>
+</ul>
+</div>
+</div>
+<div id="returns" class="section level2">
+<h2>Returns</h2>
+<div id="arithmetic-mean-vs.-geometric-mean" class="section level3">
+<h3>Arithmetic Mean vs. Geometric Mean</h3>
+<ul>
+<li>The arithmetic mean is the best estimate of a single period’s return.<br />
+</li>
+<li>The geometric mean is the best estimate of future multi-year annual compound returns.</li>
+</ul>
+</div>
+<div id="money-weighted-return" class="section level3">
+<h3>Money-Weighted Return</h3>
+<ul>
+<li>IRR on a series of cash flows</li>
+</ul>
+</div>
+<div id="time-weighted-return" class="section level3">
+<h3>Time-weighted return</h3>
+<ol style="list-style-type: decimal">
+<li>Price the portfolio immediately prior to any significant addition or withdrawal of funds. Break the overall evaluation period into subperiods based on the dates of cash inflows and outflows.<br />
+</li>
+<li>Calculate the holding period return on the portfolio for each subperiod.</li>
+<li>Link or compound holding period returns to obtain an annual rate of return for the year (the time-weighted rate of return for the year). If the investment is for more thant one year, take the geometric mean of the annual returns to obtain the time-weighted rate of return over that measurement period.</li>
+</ol>
+<p><font style="color: crimson; font-weight: bold; font: italic; margin-left: 26px;"> Note: </font> Assume dividends are <em>not</em> reinvested!</p>
+</div>
+</div>
+<div id="money-market" class="section level2">
+<h2>Money Market</h2>
+<ul>
+<li>The market for short-term debt (t-bills, commercial paper, etc.)</li>
+<li>T-bills are quoted on a bank-discount basis.</li>
+</ul>
+<div id="bank-discount-yield" class="section level3">
+<h3>Bank-Discount Yield</h3>
+<ul>
+<li>Pure discount securities such as T-bills are quoted differently than government bonds<br />
+</li>
+<li><span class="math inline">\(\mathrm {\large {R_{BD} = \frac{\text{D}} {\text{F}} \times \frac{360} {t}}}\)</span></li>
+<li>Based on face value, not investment price * Based on 360-day year * Assumes simple interest<br />
+</li>
+<li>Variables:
++ D = discount
++ F = face value
+<ul>
+<li>t = days to maturity</li>
+</ul></li>
+</ul>
+</div>
+<div id="holding-period-return" class="section level3">
+<h3>Holding Period Return</h3>
+<ul>
+<li><span class="math inline">\(\mathrm {\large {HPY = \frac{P_{1} - P_{0} + D_{1}} {P_{0}}}}\)</span></li>
+<li>Based on any length of time</li>
+<li>Based on one cash payment during life</li>
+<li>Purchase price and sale price must include Accrued Interest (for bonds)</li>
+<li>Accrued interest = Annual Coupon/2*time held by seller/total time in payment period</li>
+</ul>
+</div>
+<div id="effective-annual-yield" class="section level3">
+<h3>Effective Annual Yield</h3>
+<ul>
+<li><span class="math inline">\(\mathrm {\large {EAY = (1 + HPY)^{365 / t} - 1}}\)</span></li>
+</ul>
+</div>
+<div id="money-market-yield-cd-equivalent-yield" class="section level3">
+<h3>Money-Market Yield (CD equivalent yield)</h3>
+<ul>
+<li><span class="math inline">\(\mathrm {\large {r_{mm} = \frac{360 \ (r_{BD})} {360 - (r_{BD})t} = r_{BD} \frac{F} {P_0}} = HPY \frac{360} {t}}\)</span></li>
+<li>Computed on the purchase price, not Face Value</li>
+</ul>
+</div>
+<div id="bond-equivalent-yield" class="section level3">
+<h3>Bond-Equivalent Yield</h3>
+<ul>
+<li><span class="math inline">\(\mathrm {\large {BEY = \text{semiannual IRR} \times 2}}\)</span></li>
+</ul>
+</div>
+<div id="time-weighted-rate-of-return" class="section level3">
+<h3>Time-Weighted Rate of Return</h3>
+<ul>
+<li>Note: Dividends are assumed to be contributed by fund manager</li>
+<li>Note: Dividends are assumed to be held by investor (not reinvested)</li>
+</ul>
+</div>
+</div>
+<div id="position-of-a-percentile" class="section level2">
+<h2>Position of a Percentile</h2>
+<ul>
+<li><span class="math inline">\(\mathrm {\large {L_y = \frac{(n+1) \cdot y} {100}}}\)</span></li>
+</ul>
+<hr>
+<p><a id="nav__prev" href="../cfa-study-topics">Topics List</a></p>
+<p><a id="nav__next" href="../cfa-level-1-quantitative-methods-part-2">Next</a></p>
+<p><br></p>
+</div>

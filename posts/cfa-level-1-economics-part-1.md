@@ -33,7 +33,10 @@ thumbnail: ""
 
 ### Price Elasticity of Demand
 
-- $\mathrm {\large {E_{p} = \frac{\text{%}\Delta \text{Quantity demanded}} {\text{%}\Delta Price} = \frac{\Delta Q_{d} \div Q_{ave}} {\Delta P \div {P_{ave}}}}}$
+- `$\mathrm {\large {E_{p} = \frac{\text{}\Delta \text{Quantity demanded}} {\text{}\Delta Price} = \frac{\Delta Q_{d} \div Q_{ave}} {\Delta P \div {P_{ave}}}}}$`
+
+<!-- ... we have $x\_1 = 132$ and $x\_2 = 370$ and so ... -->
+
 - Concerned with absolute value
 
 ## Factors that influence Elasticity of Demand

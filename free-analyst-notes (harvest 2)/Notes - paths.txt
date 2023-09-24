@@ -1,0 +1,14 @@
+
+
+
+---------------
+Images
+---------------
+
+Path: 
+free-analyst-notes/themes/Mainroad/static/img
+
+Dimensions: 
+"680 px x 680 px"
+
+Don't put `r Sys.time()` in date: field, because it creates problems with netlify.
