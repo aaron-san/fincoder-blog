@@ -13,9 +13,10 @@ const config = {
     mdxRs: false, // Use the older MDX compiler; change if needed
   },
   basePath: isProd ? "/fincoder-blog" : "", // Add basePath for production
-  assetPrefix: "", // No asset prefix needed for GitHub Pages
+  assetPrefix: isProd ? "/fincoder-blog/" : "", // No asset prefix needed for GitHub Pages
 };
 
 export default withMDX({
   extension: /\.mdx?$/,
 })(config);
+
