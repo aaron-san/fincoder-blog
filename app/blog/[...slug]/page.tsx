@@ -7,21 +7,59 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import matter from "gray-matter";
 import Link from "next/link";
-import { getSlugs, getCleanedTitle } from "@/app/lib/utils";
+import { getSlugFromPath, } from "@/app/lib/utils";
 import CoverImage from "@/components/CoverImage";
+
 
 const blogDir = path.join(process.cwd(), "content");
 
+// Function to recursively get all MDX files and return their slugs
+const getAllSlugs = (dir: string) => {
+  const slugs: string[] = [];
+
+  // Read all files in the directory
+  const files = fs.readdirSync(dir);
+
+  // Loop through all the files
+  for (const file of files) {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
+
+    if (stat.isDirectory()) {
+      // If it's a directory, recurse into it
+      const subSlugs = getAllSlugs(filePath);
+      subSlugs.forEach((subSlug) => {
+        slugs.push(path.join(file, subSlug)); // Join subfolder to get full path
+      });
+    } else if (file.endsWith(".mdx") || file.endsWith(".md")) {
+      // If it's an MDX file, add it to the list
+      const slug = file.replace(/\.(mdx|md)$/, ""); // Remove the file extension
+      slugs.push(slug);
+    }
+  }
+
+  return slugs;
+};
+
+// Generate static params
 export async function generateStaticParams() {
-  return getSlugs(blogDir);
+  // Get all slugs from the content directory
+  const slugs = getAllSlugs(blogDir);
+
+  // Return slugs as params for static generation
+  return slugs.map((slug) => ({
+    slug: slug.split("/"), // Split slug into an array for dynamic routing
+  }));
 }
+
+
 
 export default async function BlogPost({
   params,
 }: {
   params: { slug: string[] };
 }) {
-  const slugPath = params.slug.join("/"); // e.g. "cfa-level-1/simple"
+  const slugPath = params.slug.join("/"); // e.g. "blog/interest-rate-primer"
   const filePath = path.join(blogDir, `${slugPath}.mdx`);
 
   if (!fs.existsSync(filePath)) return notFound();

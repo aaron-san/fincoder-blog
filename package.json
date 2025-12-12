@@ -1,6 +1,6 @@
 {
-  "name": "free-analyst-notes",
-  "homepage": "",
+  "name": "fincoder-blog",
+  "homepage": "https://yourusername.github.io/fincoder-blog",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -12,7 +12,8 @@
     "clean-dev": "riraf .next && next dev",
     "nojekyll": "echo. > ./out/.nojekyll",
     "build": "next build",
-    "clean-build": "rimraf .next out pnpm-lock.yaml && npm run build"
+    "clean-build": "rimraf .next out pnpm-lock.yaml && npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",

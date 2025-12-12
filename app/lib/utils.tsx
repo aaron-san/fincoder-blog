@@ -15,7 +15,7 @@ export const getAllMdxFiles = async (contentDir: string) => {
 };
 
 // Function to get the slug (the filename without extension)
-export const getSlugFromPath = (filePath: string, contentDir: string) => {
+export const getSlugFromPath = (filePath: string) => {
   const file = path.basename(filePath, path.extname(filePath));
   return file;
 };

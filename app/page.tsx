@@ -1,4 +1,3 @@
-import fs from 'fs';
 import path from 'path';
 import { getFrontmatter, getAllMdxFiles, getSlugFromPath } from './lib/utils';
 import Post from '@/components/Post';
@@ -20,7 +19,7 @@ export default async function Home() {
   // Fetch frontmatter for each post
   const postsData = await Promise.all(
     files.map(async (file) => {
-      const slug = getSlugFromPath(file, contentDir);
+      const slug = getSlugFromPath(file);
       const frontmatter = await getFrontmatter(slug, contentDir);
       return {
         slug,
