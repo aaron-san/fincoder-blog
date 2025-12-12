@@ -1,43 +1,54 @@
-import React from "react";
-import TopicCard from "@/components/TopicCard";
+import fs from 'fs';
+import path from 'path';
+import { getFrontmatter, getAllMdxFiles, getSlugFromPath } from './lib/utils';
+import Post from '@/components/Post';
 
-const Home: React.FC = () => {
+const contentDir = path.join(process.cwd(), 'content');
+
+interface Post {
+  slug: string;
+  title: string;
+  date: string;
+  tags: string[];
+}
+
+// This is a server component in Next.js 13+
+// It will run server-side and fetch the data
+export default async function Home() {
+  const files = await getAllMdxFiles(contentDir);
+
+  // Fetch frontmatter for each post
+  const postsData = await Promise.all(
+    files.map(async (file) => {
+      const slug = getSlugFromPath(file, contentDir);
+      const frontmatter = await getFrontmatter(slug, contentDir);
+      return {
+        slug,
+        title: frontmatter.title,
+        date: frontmatter.date,
+        tags: frontmatter.tags || [],
+      };
+    })
+  );
+
   return (
-    <div>
-      <h1>Welcome to Free Analyst Notes!</h1>
-      <p>Start learning today for the next exam.</p>
-      <p>Choose a topic to get started:</p>
-      <div className="flex flex-wrap gap-2 mt-4">
-        <TopicCard title={"CFA® Level 1"} href={"/topics/cfa-level-1"}>
-          {/* The CFA® level one exam covers a wide array of topics including
-        statistics, economics, finance, and more. Learn how to do basic
-        quantitative analysis on company data and how to understand the trends
-        in the economy. */}
-        </TopicCard>
-
-        <TopicCard title={"CFA® Level 2"} href={"/topics/cfa-level-2"}>
-          {/* The CFA® level 2 exam covers more advanced topics in finance
-        including regression, ... */}
-        </TopicCard>
-
-        <TopicCard title={"CFA® Level 3"} href={"/topics/cfa-level-3"}>
-          {/* The CFA® level 3 exam focuses on portfolio management and wealth
-        planning. It is the final exam in the CFA® program and covers
-        advanced topics in finance and investment management. */}
-        </TopicCard>
-
-        <TopicCard
-          title={"CAIA Level 1"}
-          href={"/topics/caia-level-1"}
-        ></TopicCard>
-
-        <TopicCard
-          title={"CAIA Level 2"}
-          href={"/topics/caia-level-2"}
-        ></TopicCard>
+    <div className="px-6 py-4">
+      <h1 className="mb-2 font-bold text-3xl">Welcome to FinCoder Blog!</h1>
+      <p className="mb-4 text-gray-700 dark:text-gray-300">
+        Read about finance, investing, and economics.
+      </p>
+      <h2 className="mx-none mb-2 font-semibold text-xl">Latest Posts</h2>
+      <div className="flex gap-2 ml-4">
+        {postsData.map((post) => (
+          <Post
+            key={post.slug}
+            href={`/blog/${post.slug}`}
+            title={post.title}
+            date={post.date}
+            tags={post.tags}
+          />
+        ))}
       </div>
     </div>
   );
-};
-
-export default Home;
+}

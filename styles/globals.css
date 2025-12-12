@@ -1,6 +1,8 @@
+
 @import "globals-light.css";
 @import "globals-dark.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

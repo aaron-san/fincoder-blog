@@ -22,11 +22,12 @@ export default function RootLayout({
         <meta name="description" content="Description of your app" />
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
-      <body className="dark:bg-slate-800 min-h-screen dark:text-slate-100">
+      <body className="dark:bg-bg-dark min-h-screen dark:text-text-dark">
         <PageHeader />
-        <div className="mx-auto px-2 sm:px-6 pt-20 max-w-3xl min-h-[calc(100vh-3rem)]">
+        <div className="dark:bg-bg-dark mx-auto px-2 sm:px-6 pt-20 max-w-3xl min-h-[calc(100vh-3rem)] text-text-light dark:text-text-dark">
           {children}
         </div>
+
         <PageFooter />
       </body>
     </html>

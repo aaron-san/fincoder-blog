@@ -1,71 +1,29 @@
 import fs from "fs";
 import path from "path";
+import matter from "gray-matter";
+import { promisify } from "util";
 
+// Promisify fs.readFile to handle async file reads
+const readFile = promisify(fs.readFile);
 
 const contentDir = path.join(process.cwd(), "content");
 
-// Recursive function to get all slugs
-export function getSlugs(dir: string): { slug: string[] }[] {
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
-
-  return entries.flatMap((entry) => {
-    const fullPath = path.join(dir, entry.name);
-
-    if (entry.isDirectory()) {
-      // Recurse into subdirectories
-      return getSlugs(fullPath);
-    }
-
-    if (entry.isFile() && entry.name.endsWith(".mdx")) {
-      // For .mdx files, generate the slug path (relative to `content` folder)
-      const relativePath = path.relative("content", fullPath);
-      const slug = relativePath.replace(/\.mdx$/, "").split(path.sep);
-      return [{ slug }];
-    }
-
-    return [];
-  });
-}
-
-export const getCleanedSlug = (slug: string[]) => {
-  return (
-    slug[1]
-      // .replace(/-(\d+)$/, (_, num) => ` (Part ${num})`)
-      .replace(/-1/, "")
-      .split("-")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ")
-      .replace("Gips", "GIPS")
-  );
+// Function to get all markdown files in the content directory
+export const getAllMdxFiles = async (contentDir: string) => {
+  const files = await fs.promises.readdir(contentDir);
+  return files.filter((file) => file.endsWith(".mdx") || file.endsWith(".md"));
 };
 
-// Recursive function to get all slugs
-export function getTopicDirs(dir: string): { slug: string[] }[] {
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
-  const topicPaths: { slug: string[] }[] = [];
+// Function to get the slug (the filename without extension)
+export const getSlugFromPath = (filePath: string, contentDir: string) => {
+  const file = path.basename(filePath, path.extname(filePath));
+  return file;
+};
 
-  entries.forEach((entry) => {
-    // const fullPath = path.join(dir, entry.name);
-
-    if (entry.isDirectory()) {
-      // && entry.name.includes("-topics")) {
-      // Recurse into subdirectories
-      topicPaths.push({ slug: [entry.name] });
-    }
-  });
-  return topicPaths;
-}
-
-
-
-// export async function wrapTables(html: string) {
-//   const { load } = await import("cheerio"); // safe for Next.js
-//   const $ = load(html);
-
-//   $("table").each(function () {
-//     $(this).wrap('<div class="table-container"></div>');
-//   });
-
-//   return $.html();
-// }
-
+// Function to get the frontmatter (metadata) from the markdown file
+export const getFrontmatter = async (slug: string, contentDir: string) => {
+  const filePath = path.join(contentDir, `${slug}.mdx`);
+  const fileContent = await readFile(filePath, "utf-8");
+  const { data } = matter(fileContent);  // Get only the frontmatter (metadata)
+  return data;  // Return frontmatter metadata like title, date, tags, etc.
+};

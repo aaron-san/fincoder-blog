@@ -1,6 +1,18 @@
 @layer base {
   :root {
     --TABLE_HEADER_BG: rgba(20, 70, 120, 0.5);
+    --mint-50: 0.95 0.02 178;
+    --mint-100: 0.9 0.04 178;
+    --mint-200: 0.83 0.07 178;
+    --mint-300: 0.76 0.09 178;
+    --mint-400: 0.72 0.1 178;
+    --mint-500: 0.68 0.11 178;
+    --mint-600: 0.6 0.11 178;
+    --mint-700: 0.52 0.1 178;
+    --mint-800: 0.42 0.08 178;
+    --mint-900: 0.32 0.06 178;
+    --bg-light: 0.9 0.04 178;
+    --text-light: 0.32 0.06 178;
   }
 
   html {
@@ -21,14 +33,14 @@
 
   h2 {
     font-size: 1.2rem;
-    margin: 20px 0 8px 0.5rem;
+    margin: 20px 0 8px 0;
     color: rgb(20, 100, 100);
     font-weight: 600;
   }
 
   h3 {
     font-size: 1.1rem;
-    margin: 1rem 0 0 1rem;
+    margin: 1rem 0 0 0;
     color: rgb(20, 220, 80);
   }
 
@@ -36,13 +48,13 @@
     margin-top: 1rem;
     font-style: italic;
     color: rgb(20, 300, 300);
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
   }
   h5 {
     margin-top: 1rem;
     font-style: italic;
     /* color: rgb(20, 300, 300); */
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
 
   h1,
@@ -90,6 +102,13 @@
   nav > ul li::marker {
     content: "";
   }
+
+  p {
+    margin: 0.75rem 0 0.75rem 0;
+    line-height: 1.6;
+    text-indent: 20px;  /* Adjust this value as needed */
+
+  }
   /* .note {
   color: dodgerblue;
   border: 1px solid dodgerblue;
@@ -120,7 +139,6 @@
     text-decoration: underline;
     scroll-margin-top: 60px; /* height of your fixed header */
   }
-
 
   .katex-container {
     margin: 0 auto;
@@ -210,7 +228,7 @@
   tbody tr > td:nth-of-type(1) {
     background-color: var(--TABLE_HEADER_BG);
   }
-  
+
   table-monetary-fiscal-policy table th {
     background-color: rgba(50, 50, 50, 0.8);
   }
