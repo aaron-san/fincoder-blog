@@ -1,6 +1,7 @@
 import withMDX from "@next/mdx";
 
-const isProd = process.env.NODE_ENV === "production"; // Ensure production check works
+const isProd = true;
+// const isProd = process.env.NODE_ENV === "production"; // Ensure production check works
 
 const config = {
   pageExtensions: ["js", "mjs", "ts", "tsx", "mdx"],
@@ -13,7 +14,7 @@ const config = {
     mdxRs: false, // Use the older MDX compiler; change if needed
   },
   basePath: isProd ? "/fincoder-blog" : "", // Add basePath for production
-  assetPrefix: isProd ? "/fincoder-blog/" : "", // No asset prefix needed for GitHub Pages
+  // assetPrefix: isProd ? "/fincoder-blog/" : "", // No asset prefix needed for GitHub Pages
 };
 
 export default withMDX({
