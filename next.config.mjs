@@ -1,23 +1,16 @@
 import withMDX from "@next/mdx";
 
-const isProd = true;
-// const isProd = process.env.NODE_ENV === "production"; // Ensure production check works
+const repo = "fincoder-blog";
 
-const config = {
-  pageExtensions: ["js", "mjs", "ts", "tsx", "mdx"],
-  output: "export", // Enables static HTML export
-  swcMinify: true, // Minifies JavaScript with SWC for better performance
-  images: {
-    unoptimized: true, // Disable image optimization (necessary for static export)
-  },
-  experimental: {
-    mdxRs: false, // Use the older MDX compiler; change if needed
-  },
-  basePath: isProd ? "/fincoder-blog" : "", // Add basePath for production
-  // assetPrefix: isProd ? "/fincoder-blog/" : "", // No asset prefix needed for GitHub Pages
+const nextConfig = {
+  output: "export",
+  images: { unoptimized: true },
+  pageExtensions: ["js", "ts", "tsx", "mdx"],
+
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
 };
 
 export default withMDX({
   extension: /\.mdx?$/,
-})(config);
-
+})(nextConfig);

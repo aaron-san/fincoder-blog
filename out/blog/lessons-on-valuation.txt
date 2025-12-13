@@ -1,5 +1,5 @@
 1:HL["/fincoder-blog/_next/static/css/3d6930711e77b27c.css","style",{"crossOrigin":""}]
-0:["1b646hPStxGW3JJ3gFyTP",[[["",{"children":["blog",{"children":[["slug","lessons-on-valuation","c"],{"children":["__PAGE__?{\"slug\":[\"lessons-on-valuation\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/fincoder-blog/_next/static/css/3d6930711e77b27c.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["9A7cNU7GKP3yzBLWCiF63",[[["",{"children":["blog",{"children":[["slug","lessons-on-valuation","c"],{"children":["__PAGE__?{\"slug\":[\"lessons-on-valuation\"]}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/fincoder-blog/_next/static/css/3d6930711e77b27c.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-5d190a0f61586769.js","797","static/chunks/app/blog/%5B...slug%5D/page-2574a11c0798a12e.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]

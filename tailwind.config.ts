@@ -12,26 +12,25 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         mint: {
-          50:  "oklch(var(--mint-50))",
-      100: "oklch(var(--mint-100))",
-      200: "oklch(var(--mint-200))",
-      300: "oklch(var(--mint-300))",
-      400: "oklch(var(--mint-400))",
-      500: "oklch(var(--mint-500))",
-      600: "oklch(var(--mint-600))",
-      700: "oklch(var(--mint-700))",
-      800: "oklch(var(--mint-800))",
-      900: "oklch(var(--mint-900))",
+          50: "oklch(var(--mint-50))",
+          100: "oklch(var(--mint-100))",
+          200: "oklch(var(--mint-200))",
+          300: "oklch(var(--mint-300))",
+          400: "oklch(var(--mint-400))",
+          500: "oklch(var(--mint-500))",
+          600: "oklch(var(--mint-600))",
+          700: "oklch(var(--mint-700))",
+          800: "oklch(var(--mint-800))",
+          900: "oklch(var(--mint-900))",
         },
         bg: {
           light: "oklch(var(--mint-100))",
-          dark: "oklch(var(--mint-900))"
+          dark: "oklch(var(--mint-900))",
         },
         text: {
           light: "oklch(var(--mint-900))",
-          dark: "oklch(var(--mint-50))"
-        }
-
+          dark: "oklch(var(--mint-50))",
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
