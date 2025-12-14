@@ -1,5 +1,5 @@
-1:HL["/fincoder-blog/_next/static/css/913ab41edef38a5f.css","style",{"crossOrigin":""}]
-0:["8rMJ2j_cYNcydUYynEMHP",[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/fincoder-blog/_next/static/css/913ab41edef38a5f.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/fincoder-blog/_next/static/css/72bd457ee6660132.css","style",{"crossOrigin":""}]
+0:["yTk6rSLRgQxvbqwI_ujpH",[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/fincoder-blog/_next/static/css/72bd457ee6660132.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[990,["990","static/chunks/990-5d190a0f61586769.js","301","static/chunks/app/about/page-b281102f00724b9e.js"],""]
 5:I[4282,[],""]
 6:I[4060,[],""]
